@@ -4,22 +4,31 @@
 
 
 /* scroll bar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     cursor: pointer;
     width: 8px;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
     background: #363535;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #c0bcbc;
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover
-{
+::-webkit-scrollbar-thumb:hover {
     background: #f8f5f5;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
